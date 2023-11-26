@@ -1,0 +1,138 @@
+html {
+  font-size: 10px;
+  background-color: #E1D4C9;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: inter, sans-serif;
+  font-style: normal;
+  width: 1440px;
+  margin: auto;
+}
+
+h1 {
+  font-family: Inter;
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 105%;
+}
+
+h2 {
+  font-family: Inter;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+h3 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.accent {
+  color: var(--color-text-accent);
+  font-style: italic;
+}
+
+.button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px 78px;
+  border-style: none;
+  border-radius: 100px;
+}
+
+:root {
+  --color-text-light: #E1D4C9;
+  --color-text-dark: #403F3D;
+  --color-text-accent: #B0907A;
+  --color-background: #E1D4C9;
+  --color-background-contact-us: #665F55;
+  --color-border: #C1B6AD;
+  --color-button: #E1D4C9;
+  --content-width: 1440px;
+  --tablet-width: 768px;
+  --mobile-big-width: 414px;
+  --mobile-small-width: 320px;
+}
+
+.promo {
+  background-image: url(/coffee-house/img/img-hero.jpg);
+  height: 644px;
+  color: var(--color-text-light);
+  border-radius: 40px;
+  border-style: none;
+}
+
+.promo__content {
+  width: 530px;
+  padding: 100px;
+}
+
+.promo__h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.promo__p {
+  margin: 0;
+  padding: 40px 0;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.button_ico {
+  line-height: 150%;
+  background-color: var(--color-text-light);
+  color: var(--color-text-dark);
+}
+
+.contact-us {
+  background: var(--color-background);
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.favorite-coffee {
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  padding: 20px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.logo {
+  height: 6rem;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  line-height: 2.8rem;
+}
+
+.navigation__link {
+  list-style: none;
+  padding: 0px 20px;
+  justify-content: space-between;
+}
+
+.wrapper {
+  max-width: var(--content-width);
+  margin: auto;
+  padding: 0px 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
