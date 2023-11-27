@@ -1,0 +1,35 @@
+
+
+.contact-us {
+    padding: 10rem;
+    border-radius: 4rem;
+    background: var(--color-background-contact-us);
+    color: var(--color-text-light);
+}
+
+.contact-us-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 53rem;
+}
+
+.contact-us-info {
+    width: 53rem;
+}
+
+.contact-us__buttons {
+    display: flex;
+}
+
+.footer__h2 {
+    margin-bottom: 4rem;
+}
+
+.button_footer {
+    margin-right: 1.2rem;
+    display: flex;
+    padding: 1.7rem;
+    background: var(--color-background-contact-us);
+    border: 0.1rem solid var(--color-border);
+}

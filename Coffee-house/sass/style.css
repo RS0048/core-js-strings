@@ -20,6 +20,7 @@ h1 {
 }
 
 h2 {
+  margin: 0;
   font-family: Inter;
   font-size: 60px;
   font-weight: 600;
@@ -47,7 +48,9 @@ h5 {
 
 .button {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--color-text-light);
   padding: 20px 78px;
+  border: 1px solid var(--color-background-contact-us);
   border-style: none;
   border-radius: 100px;
   font-style: normal;
@@ -102,15 +105,9 @@ h5 {
   font-size: 16px;
 }
 
-.contact-us {
-  background: var(--color-background-contact-us);
-  max-width: 1360px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .favorite-coffee {
   text-align: center;
+  margin-bottom: 10rem;
 }
 
 .favorite-coffee__h2 {
@@ -209,6 +206,66 @@ h5 {
   transition: 1s;
 }
 
+.about {
+  margin-bottom: 6rem;
+}
+
+.mobile-app {
+  margin-bottom: 10rem;
+}
+
+.mobile-app__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 63rem;
+  width: 63rem;
+}
+
+.mobile-app__h2 {
+  margin-bottom: 4rem;
+}
+
+.mobile-app__p {
+  margin-top: 0;
+  margin-bottom: 4rem;
+}
+
+.mobile-app__buttons {
+  display: flex;
+}
+
+.app_icon {
+  width: 3.6rem;
+  height: 3.6rem;
+  margin-right: 0.8rem;
+}
+
+.app__button {
+  display: flex;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  justify-content: start;
+  border: 1px solid var(--color-background-contact-us);
+  margin-right: 2rem;
+}
+
+.button-google-p1__content {
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 0.2rem;
+}
+
+.button-google-p2__content {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.mobile-app__image {
+  height: 63rem;
+  width: 63rem;
+}
+
 .header {
   padding: 20px;
 }
@@ -246,6 +303,40 @@ h5 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.contact-us {
+  padding: 10rem;
+  border-radius: 4rem;
+  background: var(--color-background-contact-us);
+  color: var(--color-text-light);
+}
+
+.contact-us-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 53rem;
+}
+
+.contact-us-info {
+  width: 53rem;
+}
+
+.contact-us__buttons {
+  display: flex;
+}
+
+.footer__h2 {
+  margin-bottom: 4rem;
+}
+
+.button_footer {
+  margin-right: 1.2rem;
+  display: flex;
+  padding: 1.7rem;
+  background: var(--color-background-contact-us);
+  border: 0.1rem solid var(--color-border);
 }
 
 /*# sourceMappingURL=style.css.map */
