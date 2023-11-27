@@ -70,7 +70,7 @@ h5 {
 }
 
 .promo {
-  background-image: url(/coffee-house/img/img-hero.jpg);
+  background-image: url(../img/img-hero.jpg);
   height: 644px;
   color: var(--color-text-light);
   border-radius: 40px;
