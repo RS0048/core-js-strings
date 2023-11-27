@@ -44,32 +44,41 @@
     </section>
     <section class="favorite-coffee">
         <div class="wrapper">
-            <h2 class="h2">
+            <h2 class="h2 favorite-coffee__h2">
                 Choose your <span class="accent">favorite</span> coffee
             </h2>
             <div class="slider-coffee">
-                <div class="slider__button"><button class="button button_slider-left">&larr;</button></div>
-                <div class="slider__image">
-                    <img src="#" alt="S’mores Frappuccino">
+                <div class="slider__button"><button class="button button_slider"><img src="/Coffee-house/img/arrow-left.svg" alt="arrow-left"></button></div>
+                <div class="slider__content">
+                    <img src="/Coffee-house/img/coffee-slider-1.svg" alt="S’mores Frappuccino" class="slider__image">
                     <h5 class="slider__h5">S’mores Frappuccino</h5>
                     <p class="slider__info">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
                     <p class="slider__price">$5.50</p>
+                    <div class="slider__control">
+                        <div class="activ-control__border"></div>
+                        <div class="control__border"></div>
+                        <div class="control__border"></div>
+                    </div>
                 </div>
-                <div class="slider__button"><button class="button button_slider-right">&rarr;</button></div>
+                <div class="slider__button"><button class="button button_slider"><img src="/Coffee-house/img/arrow-right.svg" alt="arrow-right"</button></div>
             </div>  
         </div>
     </section>
     <section class="about">
-        <div class="wrapper">
-            <h2 class="h2">
-                Resource is the perfect and cozy place where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.
+        <div class="wrapper about__wrapper">
+            <h2 class="about__h2">
+                Resource is <span class="accent">the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.
             </h2>
             <div class="layout-2-colump">
-                <div class="image__scale"><img src="/coffee-house/img/about-1.jpg" alt="img-about1"></div>
-                <div class="image__scale"><img src="/coffee-house/img/about-2.jpg" alt="img-about2"></div>
-                <div class="image__scale"><img src="/coffee-house/img/about-3.jpg" alt="img-about3"></div>
-                <div class="image__scale"><img src="/coffee-house/img/about-4.jpg" alt="img-about4"></div>
+                <div class="colump-1">
+                    <div class="about__image image__big"><img class="about__img" src="/coffee-house/img/about-1.jpg" alt="img-about1"></div>
+                    <div class="about__image image__small"><img class="about__img" src="/coffee-house/img/about-2.jpg" alt="img-about2"></div>
                 </div>
+                <div class="colump-2">
+                    <div class="about__image image__small"><img class="about__img" src="/coffee-house/img/about-3.jpg" alt="img-about3"></div>
+                    <div class="about__image image__big"><img class="about__img" src="/coffee-house/img/about-4.jpg" alt="img-about4"></div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="mobile-app">
@@ -94,7 +103,7 @@
                     </div>
                 </div>
                 <div class="mobile-app__image">
-                    <img src="/coffee-house/img/mobile-screens.jpg" alt="img-mobile-screens">
+                    <img src="/coffee-house/img/mobile-screens.svg" alt="img-mobile-screens">
                 </div>
             </div>
         </div>

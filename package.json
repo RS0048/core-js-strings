@@ -1,0 +1,12 @@
+{
+  "name": "rs0048-jsfe2023q4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch Coffee-house/sass/style.scss Coffee-house/sass/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
