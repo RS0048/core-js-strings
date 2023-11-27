@@ -252,26 +252,16 @@ h5 {
   margin-right: 2rem;
 }
 
-.button-google__content {
+.app_button-p1__content {
   display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-
-.button-apple__content {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-
-.button-google-p1__content {
   font-size: 1rem;
   margin-top: 0;
   margin-bottom: 0.2rem;
   line-height: 140%;
 }
 
-.button-google-p2__content {
+.app_button-p2__content {
+  display: flex;
   font-size: 1.6rem;
   margin: 0;
   line-height: 150%;
@@ -280,6 +270,83 @@ h5 {
 .mobile-app__image {
   height: 63rem;
   width: 63rem;
+}
+
+.coffee-menu__h1 {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 4rem;
+  padding: 0 28rem;
+  text-align: center;
+  font-size: 6rem;
+}
+
+.coffee-menu-all {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.coffee-menu-position {
+  margin-bottom: 4rem;
+  border-radius: 4rem;
+  border: 0.1rem solid var(--color-border);
+}
+
+.position__image {
+  display: flex;
+  width: 31rem;
+  height: 31rem;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4rem;
+  border: none;
+}
+
+.position-img {
+  display: flex;
+  width: 110%;
+  height: 110%;
+  transition: 1s;
+}
+
+.position-img:hover {
+  transform: scale(0.9);
+  transition: 1s;
+}
+
+.menu-position-content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 27rem;
+  height: 19rem;
+  margin: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-position__h3 {
+  margin-bottom: 1.2rem;
+}
+
+.description-position {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  line-height: 150%;
+}
+
+.price-position {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.4rem;
+  line-height: 125%;
+  font-weight: 600;
+}
+
+.coffee-menu {
+  margin-bottom: 6rem;
 }
 
 .header {
@@ -326,7 +393,7 @@ h5 {
   border-radius: 4rem;
   background: var(--color-background-contact-us);
   color: var(--color-text-light);
-  margin-bottom: 4rem;
+  margin: 0 4rem 4rem 4rem;
 }
 
 .contact-us-content {
