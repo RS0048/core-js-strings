@@ -45,7 +45,7 @@ margin-bottom: 10rem;
     display: flex;
     padding: 1.7rem;
     border: 1px solid var(--color-background-contact-us);
-    
+    transition: 0.7s;
 }
 
 
@@ -55,6 +55,7 @@ margin-bottom: 10rem;
     border: 1px solid var(--color-background);
     background-color: var(--color-background-contact-us);
     cursor: pointer;
+    transition: 0.7s;
     
     .arrow_svg {
         stroke: var(--color-background);

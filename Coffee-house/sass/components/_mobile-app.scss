@@ -37,6 +37,7 @@
     justify-content: start;
     border: 1px solid var(--color-background-contact-us);
     margin-right: 2rem;
+    transition: 0.7s;
 }
 
 .app__button:hover {
@@ -50,6 +51,7 @@
     color: var(--color-text-light);
     margin-right: 2rem;
     cursor: pointer;
+    transition: 0.7s;
 
     .app_svg {
         fill: var(--color-background);

@@ -51,37 +51,39 @@ h5 {
 .link {
   text-decoration: none;
   color: var(--color-text-dark);
+  border-bottom: 0.3rem solid var(--color-background);
+  transition: 0.5s;
 }
 
 .link:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--color-text-dark);
+  border-bottom: 0.3rem solid var(--color-border-dark);
+  border-radius: 0.1rem;
 }
 
-.link:active {
-  color: var(--color-text-dark);
-}
-
-.link:visited {
+.link:active, .link:visited {
+  text-decoration: none;
   color: var(--color-text-dark);
 }
 
 .link-footer {
   text-decoration: none;
   color: var(--color-text-light);
+  border-bottom: 0.3rem solid var(--color-background-contact-us);
+  transition: 0.5s;
+}
+
+.link-footer:active, .link-footer:visited {
+  text-decoration: none;
+  color: var(--color-text-light);
 }
 
 .link-footer:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--color-text-light);
-}
-
-.link-footer:active {
-  color: var(--color-text-light);
-}
-
-.link-footer:visited {
-  color: var(--color-text-light);
+  border-bottom: 0.3rem solid var(--color-border);
+  border-radius: 0.1rem;
 }
 
 .button {
@@ -189,6 +191,7 @@ h5 {
   display: flex;
   padding: 1.7rem;
   border: 1px solid var(--color-background-contact-us);
+  transition: 0.7s;
 }
 
 .button_slider:hover {
@@ -197,6 +200,7 @@ h5 {
   border: 1px solid var(--color-background);
   background-color: var(--color-background-contact-us);
   cursor: pointer;
+  transition: 0.7s;
 }
 .button_slider:hover .arrow_svg {
   stroke: var(--color-background);
@@ -306,6 +310,7 @@ h5 {
   justify-content: start;
   border: 1px solid var(--color-background-contact-us);
   margin-right: 2rem;
+  transition: 0.7s;
 }
 
 .app__button:hover {
@@ -319,6 +324,7 @@ h5 {
   color: var(--color-text-light);
   margin-right: 2rem;
   cursor: pointer;
+  transition: 0.7s;
 }
 .app__button:hover .app_svg {
   fill: var(--color-background);
@@ -442,6 +448,7 @@ h5 {
   padding-right: 1.5rem;
   background-color: var(--color-background);
   margin: 0 0.8rem;
+  transition: 0.7s;
 }
 
 .drink__image {
@@ -492,6 +499,8 @@ h5 {
   padding-right: 1.5rem;
   background-color: var(--color-background-contact-us);
   margin: 0 0.8rem;
+  transition: 0.7s;
+  cursor: pointer;
 }
 .drink__button:hover .drink__image {
   padding: 0.4rem 0.65rem;
@@ -609,6 +618,7 @@ h5 {
   padding: 1.5rem 1.7rem;
   background: var(--color-background-contact-us);
   border: 0.1rem solid var(--color-border);
+  transition: 0.7s;
 }
 
 .button_footer:hover {
@@ -618,6 +628,7 @@ h5 {
   background: var(--color-background);
   border: 0.1rem solid var(--color-border-contact-us);
   cursor: pointer;
+  transition: 0.7s;
 }
 .button_footer:hover .social_svg {
   stroke: var(--color-background-contact-us);
