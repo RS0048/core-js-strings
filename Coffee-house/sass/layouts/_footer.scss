@@ -48,6 +48,19 @@
     border: 0.1rem solid var(--color-border);
 }
 
+.button_footer:hover {
+    margin-right: 1.2rem;
+    display: flex;
+    padding: 1.7rem;
+    background: var(--color-background);
+    border: 0.1rem solid var(--color-border-contact-us);
+    cursor: pointer;
+
+  .social_svg {
+    stroke: var(--color-background-contact-us);
+  }
+}
+
 .contact-us__ico {
     margin-right: 0.8rem;
 }

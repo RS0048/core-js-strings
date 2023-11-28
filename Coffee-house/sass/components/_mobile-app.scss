@@ -39,6 +39,23 @@
     margin-right: 2rem;
 }
 
+.app__button:hover {
+    display: flex;
+    align-items: center;
+    width: 20rem;
+    padding: 1.2rem 2rem;
+    justify-content: start;
+    border: 1px solid var(--color-background);
+    background-color: var(--color-background-contact-us);
+    color: var(--color-text-light);
+    margin-right: 2rem;
+    cursor: pointer;
+
+    .app_svg {
+        fill: var(--color-background);
+    }
+}
+
 
 
 .app_button-p1__content {
