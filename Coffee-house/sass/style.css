@@ -85,7 +85,7 @@ h5 {
 }
 
 .button {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "inter", sans-serif;
   background-color: var(--color-text-light);
   padding: 20px 78px;
   border: 1px solid var(--color-background-contact-us);
@@ -415,6 +415,85 @@ h5 {
 
 .coffee-menu {
   margin-bottom: 6rem;
+}
+
+.all_drink__button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.drink__button {
+  display: flex;
+  border: 0.1rem solid var(--color-border);
+  align-items: center;
+  justify-items: start;
+  padding: 0.8rem;
+  padding-right: 1.5rem;
+  background-color: var(--color-background);
+  margin: 0 0.8rem;
+}
+
+.drink__image {
+  padding: 0.4rem 0.65rem;
+  border: none;
+  border-radius: 10rem;
+  background-color: var(--color-border);
+  margin-right: 0.8rem;
+}
+
+.drink__content {
+  color: var(--color-text-dark);
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+.drink__button_modificed {
+  display: flex;
+  border: 0.1rem solid var(--color-border-dark);
+  align-items: center;
+  justify-items: start;
+  padding: 0.8rem;
+  padding-right: 1.5rem;
+  background-color: var(--color-background-contact-us);
+  margin: 0 0.8rem;
+}
+
+.drink__image_modificed {
+  padding: 0.4rem 0.65rem;
+  border: none;
+  border-radius: 10rem;
+  background-color: var(--color-background);
+  margin-right: 0.8rem;
+}
+
+.drink__content_modificed {
+  color: var(--color-text-light);
+  font-size: 1.6rem;
+  line-height: 150%;
+}
+
+.drink__button:hover {
+  display: flex;
+  border: 0.1rem solid var(--color-border-dark);
+  align-items: center;
+  justify-items: start;
+  padding: 0.8rem;
+  padding-right: 1.5rem;
+  background-color: var(--color-background-contact-us);
+  margin: 0 0.8rem;
+}
+.drink__button:hover .drink__image {
+  padding: 0.4rem 0.65rem;
+  border: none;
+  border-radius: 10rem;
+  background-color: var(--color-background);
+  margin-right: 0.8rem;
+}
+.drink__button:hover .drink__content {
+  color: var(--color-text-light);
+  font-size: 1.6rem;
+  line-height: 150%;
 }
 
 .header {
