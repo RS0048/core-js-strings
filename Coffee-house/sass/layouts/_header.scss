@@ -18,11 +18,12 @@ height: 6rem;
     display: flex;
     align-items: center;
     line-height: 2.8rem;
+    margin: 0;
 }
 
 .navigation__link {
     list-style: none;
-    padding: 2rem;
+    padding: 0 2rem;
     justify-content: space-between;
 }
 

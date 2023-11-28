@@ -522,11 +522,12 @@ h5 {
   display: flex;
   align-items: center;
   line-height: 2.8rem;
+  margin: 0;
 }
 
 .navigation__link {
   list-style: none;
-  padding: 2rem;
+  padding: 0 2rem;
   justify-content: space-between;
 }
 
@@ -554,12 +555,12 @@ h5 {
   flex-wrap: wrap;
 }
 
-.contact-us {
+.contact-us-back {
   padding: 10rem;
   border-radius: 4rem;
   background: var(--color-background-contact-us);
   color: var(--color-text-light);
-  margin: 0 4rem 4rem 4rem;
+  margin-bottom: 4rem;
 }
 
 .contact-us-content {
@@ -596,7 +597,7 @@ h5 {
 .button_footer {
   margin-right: 1.2rem;
   display: flex;
-  padding: 1.7rem;
+  padding: 1.5rem 1.7rem;
   background: var(--color-background-contact-us);
   border: 0.1rem solid var(--color-border);
 }
@@ -604,7 +605,7 @@ h5 {
 .button_footer:hover {
   margin-right: 1.2rem;
   display: flex;
-  padding: 1.7rem;
+  padding: 1.5rem 1.7rem;
   background: var(--color-background);
   border: 0.1rem solid var(--color-border-contact-us);
   cursor: pointer;
