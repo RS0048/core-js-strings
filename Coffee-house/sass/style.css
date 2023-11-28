@@ -557,6 +557,19 @@ h5 {
   display: flex;
 }
 
+.button_ico:hover {
+  cursor: pointer;
+}
+.button_ico:hover .cup-color {
+  stroke: var(--color-text-dark);
+  transition: 1s;
+}
+
+.button_ico .cup-color {
+  stroke: var(--color-text-light);
+  transition: 0.7s;
+}
+
 .wrapper {
   max-width: var(--content-width);
   margin: 0 40px;

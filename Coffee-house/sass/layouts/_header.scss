@@ -42,3 +42,19 @@ height: 6rem;
     display: flex;
 
 }
+
+.button_ico:hover {
+    .cup-color {
+        stroke: var(--color-text-dark);
+        transition: 1s;
+    }  
+    cursor: pointer;
+}
+
+.button_ico {
+    .cup-color {
+        stroke: var(--color-text-light);
+        transition: 0.7s;
+    }  
+}
+
