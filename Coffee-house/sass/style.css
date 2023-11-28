@@ -1,6 +1,7 @@
 html {
   font-size: 10px;
   background-color: #E1D4C9;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -45,6 +46,16 @@ h5 {
 .accent {
   color: var(--color-text-accent);
   font-style: italic;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-text-dark);
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: var(--color-text-dark);
 }
 
 .button {
@@ -175,14 +186,6 @@ h5 {
   margin: 0 0.6rem;
   border-radius: 10rem;
   background-color: var(--color-border);
-  width: 4rem;
-  height: 0.4rem;
-}
-
-.control__border:hover {
-  margin: 0 0.6rem;
-  border-radius: 10rem;
-  background-color: var(--color-border-dark);
   width: 4rem;
   height: 0.4rem;
 }
@@ -414,6 +417,10 @@ h5 {
   list-style: none;
   padding: 0px 20px;
   justify-content: space-between;
+}
+
+.coffee-cup__image {
+  text-align: center;
 }
 
 .wrapper {

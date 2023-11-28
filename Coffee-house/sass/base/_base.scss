@@ -1,6 +1,7 @@
 html {
     font-size: 10px;
     background-color: #E1D4C9;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -46,3 +47,14 @@ h5 {
     color: var(--color-text-accent);
     font-style: italic;
 }
+
+.link {
+    text-decoration: none;
+    color: var(--color-text-dark);
+}
+
+.link:hover {
+    text-decoration: underline;
+    color: var(--color-text-dark);
+}
+
