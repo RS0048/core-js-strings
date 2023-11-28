@@ -1,5 +1,5 @@
 .header {
-    padding: 20px;
+    padding: 2rem 0;
 }
 
 .header__wrapper {
@@ -22,10 +22,22 @@ height: 6rem;
 
 .navigation__link {
     list-style: none;
-    padding: 0px 20px;
+    padding: 2rem;
     justify-content: space-between;
+}
+
+.navigation__link_menu {
+    list-style: none;
+
+    justify-content: space-between;
+
 }
 
 .coffee-cup__image {
     text-align: center;
+}
+
+.header__menu {
+    display: flex;
+
 }

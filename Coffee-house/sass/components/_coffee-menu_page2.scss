@@ -6,6 +6,8 @@
     padding: 0 28rem;
     text-align: center;
     font-size: 6rem;
+    line-height: 125%;
+
 }
 
 .coffee-menu-all {
@@ -48,7 +50,7 @@
 display: flex;
 flex-wrap: wrap;
 width: 27rem;
-height: 19rem;
+height: 15.6rem;
 margin: 2rem;
 flex-direction: column;
 justify-content: space-between;
@@ -62,6 +64,11 @@ justify-content: space-between;
     margin-top: 0;
     margin-bottom: 1.2rem;
     line-height: 150%;
+}
+
+.menu-content {
+    padding: 0;
+    margin: 0;
 }
 
 .price-position {

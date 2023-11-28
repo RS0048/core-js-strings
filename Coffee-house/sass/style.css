@@ -68,20 +68,20 @@ h5 {
 
 .link-footer {
   text-decoration: none;
-  color: var(--color-text-dark);
+  color: var(--color-text-light);
 }
 
 .link-footer:hover {
   text-decoration: underline;
-  color: var(--color-text-dark);
+  color: var(--color-text-light);
 }
 
 .link-footer:active {
-  color: var(--color-text-dark);
+  color: var(--color-text-light);
 }
 
 .link-footer:visited {
-  color: var(--color-text-dark);
+  color: var(--color-text-light);
 }
 
 .button {
@@ -347,6 +347,7 @@ h5 {
   padding: 0 28rem;
   text-align: center;
   font-size: 6rem;
+  line-height: 125%;
 }
 
 .coffee-menu-all {
@@ -389,7 +390,7 @@ h5 {
   display: flex;
   flex-wrap: wrap;
   width: 27rem;
-  height: 19rem;
+  height: 15.6rem;
   margin: 2rem;
   flex-direction: column;
   justify-content: space-between;
@@ -403,6 +404,11 @@ h5 {
   margin-top: 0;
   margin-bottom: 1.2rem;
   line-height: 150%;
+}
+
+.menu-content {
+  padding: 0;
+  margin: 0;
 }
 
 .price-position {
@@ -497,7 +503,7 @@ h5 {
 }
 
 .header {
-  padding: 20px;
+  padding: 2rem 0;
 }
 
 .header__wrapper {
@@ -520,12 +526,21 @@ h5 {
 
 .navigation__link {
   list-style: none;
-  padding: 0px 20px;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.navigation__link_menu {
+  list-style: none;
   justify-content: space-between;
 }
 
 .coffee-cup__image {
   text-align: center;
+}
+
+.header__menu {
+  display: flex;
 }
 
 .wrapper {
