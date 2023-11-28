@@ -66,6 +66,24 @@ h5 {
   color: var(--color-text-dark);
 }
 
+.link-footer {
+  text-decoration: none;
+  color: var(--color-text-dark);
+}
+
+.link-footer:hover {
+  text-decoration: underline;
+  color: var(--color-text-dark);
+}
+
+.link-footer:active {
+  color: var(--color-text-dark);
+}
+
+.link-footer:visited {
+  color: var(--color-text-dark);
+}
+
 .button {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: var(--color-text-light);
