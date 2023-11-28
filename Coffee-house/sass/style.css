@@ -110,7 +110,7 @@ h5 {
   --mobile-small-width: 320px;
 }
 
-.promo {
+.promo-back {
   background-image: url(../img/img-hero.jpg);
   height: 644px;
   color: var(--color-text-light);
@@ -180,7 +180,6 @@ h5 {
 
 .slider__price {
   margin: 0;
-  margin-bottom: 4rem;
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 125%;
@@ -206,6 +205,7 @@ h5 {
 .slider__control {
   display: flex;
   justify-content: center;
+  margin-top: 4rem;
 }
 
 .control__border {
@@ -222,6 +222,10 @@ h5 {
   background-color: var(--color-border-dark);
   width: 4rem;
   height: 0.4rem;
+}
+
+.about__h2 {
+  margin-bottom: 4rem;
 }
 
 .about__image {
@@ -583,7 +587,12 @@ h5 {
 
 .contact-us__p {
   margin-top: 0;
-  margin-bottom: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.contact-us__p3 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
 }
 
 .footer__h2 {

@@ -36,7 +36,6 @@ margin-bottom: 10rem;
 
 .slider__price {
     margin: 0;
-    margin-bottom: 4rem;
     font-size: 2.4rem;
     font-weight: 600;
     line-height: 125%;
@@ -66,6 +65,7 @@ margin-bottom: 10rem;
 .slider__control {
     display: flex;
     justify-content: center;
+    margin-top: 4rem;
 }
 
 .control__border {
@@ -84,4 +84,8 @@ margin-bottom: 10rem;
     background-color: var(--color-border-dark);
     width: 4rem;
     height: 0.4rem;
+}
+
+.about__h2 {
+    margin-bottom: 4rem;
 }
