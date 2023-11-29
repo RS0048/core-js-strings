@@ -86,6 +86,11 @@ h5 {
   border-radius: 0.1rem;
 }
 
+.link-withour-border, .link-withour-border:hover {
+  text-decoration: none;
+  color: var(--color-text-dark);
+}
+
 .button {
   font-family: "inter", sans-serif;
   background-color: var(--color-text-light);
@@ -132,8 +137,8 @@ h5 {
 }
 
 .promo__p {
-  margin: 0;
-  padding: 40px 0;
+  margin-top: 4rem;
+  margin-bottom: 5.7rem;
   font-weight: 400;
   line-height: 150%;
 }

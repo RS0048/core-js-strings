@@ -88,3 +88,7 @@ h5 {
     border-radius: 0.1rem;
 }
 
+.link-withour-border, .link-withour-border:hover  {
+    text-decoration: none;
+    color: var(--color-text-dark);
+}
