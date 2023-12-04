@@ -1,11 +1,15 @@
 
 
 .contact-us-back {
-    padding: 10rem;
+    padding: 10rem 10rem 0 10rem;
     border-radius: 4rem;
     background: var(--color-background-contact-us);
     color: var(--color-text-light);
     margin-bottom: 4rem;
+
+    @media screen and (max-width:768px) {
+        padding: 10rem 6rem 0 6rem;
+    }
 }
 
 .contact-us-content {
@@ -13,6 +17,7 @@
     flex-direction: column;
     justify-content: center;
     width: 53rem;
+    padding-bottom: 10rem;
 }
 
 .contact-us-info {
@@ -20,6 +25,7 @@
     flex-direction: column;
     justify-content: center;
     width: 53rem;
+    padding-bottom: 10rem;
 }
 
 .contact-us__buttons {
@@ -54,19 +60,18 @@
     transition: 0.7s;
 }
 
-.button_footer:hover {
-    margin-right: 1.2rem;
-    display: flex;
-    padding: 1.5rem 1.7rem;
-    background: var(--color-background);
-    border: 0.1rem solid var(--color-border-contact-us);
-    cursor: pointer;
-    transition: 0.7s;
-
-  .social_svg {
-    stroke: var(--color-background-contact-us);
-  }
+@media (hover: hover) and (pointer: fine) {
+    .button_footer:hover {
+        background: var(--color-background);
+        cursor: pointer;
+    
+      .social_svg {
+        stroke: var(--color-background-contact-us);
+      }
+    }
 }
+
+
 
 .contact-us__ico {
     margin-right: 0.8rem;

@@ -3,10 +3,11 @@
     display: block;
     margin-top: 0;
     margin-bottom: 4rem;
-    padding: 0 28rem;
+    //padding: 0 28rem;
     text-align: center;
     font-size: 6rem;
     line-height: 125%;
+    max-width: 80rem;
 
 }
 
@@ -14,19 +15,51 @@
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    column-gap: 3.7rem;
 }
 
 .coffee-menu-position {
     margin-bottom: 4rem;
     border-radius: 4rem;
     border: 0.1rem solid var(--color-border);
+    box-sizing: border-box;
 }
+
+@media (max-width:1439px) {
+    .dop-menu2 {
+        display: none;
+    }
+}
+
+@media (max-width:1090px) {
+    .dop-menu {
+        display: none;
+    }
+
+}
+
+@media (min-width:1090px) {
+    .refresh__button {
+        display: none;
+    }
+}
+
+.refresh__button {
+    padding: 1.7rem;
+    border: 1px solid var(--color-background-contact-us);
+    transition: 0.7s;
+    width: 24px;
+    height: 24px;
+    border-radius: 10rem;
+    justify-content: center;
+}
+
 
 .position__image {
     display: flex;
-    width: 31rem;
-    height: 31rem;
+    width: 30.9rem;
+    height: 30.9rem;
     overflow: hidden;
     align-items: center;
     justify-content: center;
@@ -41,20 +74,24 @@
     transition: 1s;
 }
 
-.coffee-menu-position:hover {
-    .position-img {
-        transform: scale(0.9);
-        transition: 1s;
+@media (hover: hover) and (pointer: fine) {
+    .coffee-menu-position:hover {
+        .position-img {
+            transform: scale(0.9);
+            transition: 1s;
+        }
+        cursor: pointer;
     }
-    cursor: pointer;
 }
+
+
 
 
 
 .menu-position-content {
 display: flex;
 flex-wrap: wrap;
-width: 27rem;
+width: 26.9rem;
 height: 15.6rem;
 margin: 2rem;
 flex-direction: column;
@@ -86,6 +123,14 @@ justify-content: space-between;
 
 .coffee-menu {
     margin-bottom: 6rem;
+
+}
+
+.coffee-menu__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 //кнопка переключения
@@ -150,7 +195,8 @@ justify-content: space-between;
     line-height: 150%;
 }
 
-.drink__button:hover {
+@media (hover: hover) and (pointer: fine) {
+    .drink__button:hover {
         display: flex;
         border: 0.1rem solid var(--color-border-dark);
         align-items: center;
@@ -176,3 +222,7 @@ justify-content: space-between;
     }
     
 }
+}
+
+
+

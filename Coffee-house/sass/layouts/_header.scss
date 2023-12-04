@@ -38,25 +38,24 @@ height: 6rem;
     text-align: center;
 }
 
+.header__navigation {
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
 .header__menu {
     display: flex;
-
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
 }
 
-.button_ico:hover {
-    .cup-color {
-        stroke: var(--color-text-dark);
-        transition: 1s;
-    }  
-    cursor: pointer;
-}
 
-.button_ico {
-    .cup-color {
-        stroke: var(--color-text-light);
-        transition: 0.7s;
-    }  
-}
+
+
+
+
 
 .border_menu {
     border-bottom: 0.3rem solid var(--color-border-dark);

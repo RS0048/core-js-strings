@@ -6,8 +6,19 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 63rem;
-    width: 63rem;
+    flex-wrap: wrap;
+    //max-height: 63rem;
+    max-width: 63rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: 1439px) {
+        max-width: none;
+    }
+}
+
+.image-mobile {
+    width: 100%;
 }
 
 .mobile-app__h2 {
@@ -17,10 +28,13 @@
 .mobile-app__p {
     margin-top: 0;
     margin-bottom: 4rem;
+    font-weight: 400;
+    line-height: 150%;
 }
 
 .mobile-app__buttons {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .app_icon {
@@ -38,25 +52,23 @@
     border: 1px solid var(--color-background-contact-us);
     margin-right: 2rem;
     transition: 0.7s;
+    margin-bottom: 2rem;
 }
 
-.app__button:hover {
-    display: flex;
-    align-items: center;
-    width: 20rem;
-    padding: 1.2rem 2rem;
-    justify-content: start;
-    border: 1px solid var(--color-background);
-    background-color: var(--color-background-contact-us);
-    color: var(--color-text-light);
-    margin-right: 2rem;
-    cursor: pointer;
-    transition: 0.7s;
+@media (hover: hover) and (pointer: fine) {
+    .app__button:hover {
 
-    .app_svg {
-        fill: var(--color-background);
+        background-color: var(--color-background-contact-us);
+            color: var(--color-text-light);
+            cursor: pointer;
+        
+            .app_svg {
+                fill: var(--color-background);
+            }
+        
     }
 }
+
 
 
 
@@ -76,7 +88,13 @@
 }
 
 .mobile-app__image {
-    height: 63rem;
-    width: 63rem;
+    display: flex;
+    justify-content: right;
+    //height: 63rem;
+    //width: 63rem;
+
 }
 
+.image-mobile {
+    display: block;
+}

@@ -1,16 +1,28 @@
 .promo-back {
     background-image: url(../img/img-hero.jpg);
-    height: 644px;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
     color: var(--color-text-light);
     border-radius: 40px;
     border-style: none;
     margin-bottom: 10rem;
+    //width: 100%;
+    max-width: 100%;
+    @media screen and (max-width: 768px) {
+        overflow: hidden;
+    }
 }
 
 .promo__content {
-    width: 530px;
-    padding: 100px;
-
+    max-width: 53rem;
+    padding: 10rem;
+    @media screen and (max-width: 1000px) {
+        padding: 10rem 6rem;
+    }
+    @media screen and (max-width: 700px) {
+        padding: 6rem 1.6rem;
+    }
 }
 
 .promo__h1 {
@@ -30,5 +42,26 @@
     background-color: var(--color-text-light);
     color: var(--color-text-dark);
     font-size: 16px;
+    padding: 2.5rem 5rem;
+    max-width: 8rem;
+    max-height: 1.4rem;
+    display: flex;
+    align-items: center;
+    @media (hover: hover) {
+        .cup-color {
+            stroke: var(--color-text-light);
+            transition: 0.7s;
+        }  
+    }
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .button_ico:hover {
+        .cup-color {
+            stroke: var(--color-text-dark);
+            transition: 1s;
+        }  
+        cursor: pointer;
+    }
 }
 
