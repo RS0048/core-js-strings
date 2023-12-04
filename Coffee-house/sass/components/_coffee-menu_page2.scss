@@ -31,20 +31,20 @@
     box-sizing: border-box;
 }
 
-@media (max-width:1439px) {
+@media (max-width:769px) {
     .dop-menu2 {
         display: none;
     }
 }
 
-@media (max-width:1090px) {
+@media (max-width:769px) {
     .dop-menu {
         display: none;
     }
 
 }
 
-@media (min-width:1090px) {
+@media (min-width:769px) {
     .refresh__button {
         display: none;
     }
