@@ -10,10 +10,19 @@
     //max-height: 63rem;
     max-width: 63rem;
     flex-wrap: wrap;
+    margin-top: 4rem;
     margin-bottom: 2rem;
 
     @media screen and (max-width: 1439px) {
         max-width: none;
+        margin-top: 0;
+        margin-bottom: 8rem;
+    }
+
+    @media screen and (max-width: 700px) {
+        max-width: none;
+        margin-top: 0;
+        margin-bottom: 1.85rem;
     }
 }
 
@@ -97,4 +106,8 @@
 
 .image-mobile {
     display: block;
+}
+
+.button-google__content {
+    padding-left: 0.8rem;
 }
