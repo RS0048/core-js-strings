@@ -17,11 +17,34 @@ margin-bottom: 10rem;
    
 }
 
+.slider__content {
+    transform: translate(-200%);
+    transition: 7s;
+    width: 33.33%;
+    flex-shrink: 0;
+}
+
+.slider__content_all2 {
+    max-width: 48rem;
+    max-height: 115.2rem;
+    overflow: hidden;
+
+}
+
+.slider__content_all {
+    display: flex;
+    width: 300%;
+
+}
+
+
 .slider__image {
     max-width: 48rem;
     max-height: 48rem;
     margin-bottom: 1.6rem;
     width: 100%;
+    flex-shrink: 0;
+    
 }
 
 .slider__h5 {
