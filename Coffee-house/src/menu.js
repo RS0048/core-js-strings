@@ -30,8 +30,8 @@ function modalInvisible() {
     icoTool6.classList.remove("tool__ico_modificed");
     contentTool6.classList.remove("tool__content_modificed");
 
-    let sizePrice = 0;
-    let addPrice = 0;
+    sizePrice = 0;
+    addPrice = 0;
 
 }
 
