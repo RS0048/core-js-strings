@@ -17,7 +17,6 @@ function modalInvisible() {
     bodyMenu.style.overflow = "";
 }
 
-document.getElementById("menu1").addEventListener("click", modalVisible);
 document.getElementById("modalEnd").addEventListener("click", modalInvisible);
 document.getElementById("modalShadow").addEventListener("click", modalInvisible);
 
@@ -143,23 +142,23 @@ document.getElementById("buttonTool3").addEventListener("click", chooseSizeL);
 
 // sugar
 function chooseAddSugar () {
-if (!buttonTool4.classList.contains("tool__button_modificed")) {
-    addPrice += sugar
-    buttonTool4.classList.add("tool__button_modificed");
-    icoTool4.classList.add("tool__ico_modificed");
-    contentTool4.classList.add("tool__content_modificed");
+    if (!buttonTool4.classList.contains("tool__button_modificed")) {
+        addPrice += sugar
+        buttonTool4.classList.add("tool__button_modificed");
+        icoTool4.classList.add("tool__ico_modificed");
+        contentTool4.classList.add("tool__content_modificed");
 
-    totalPrice = startPrice + sizePrice + addPrice
-    modalTotalPrice.innerHTML = "$" + totalPrice.toFixed(2)
-} else {
-    addPrice -= sugar
-    buttonTool4.classList.remove("tool__button_modificed");
-    icoTool4.classList.remove("tool__ico_modificed");
-    contentTool4.classList.remove("tool__content_modificed");
+        totalPrice = startPrice + sizePrice + addPrice
+        modalTotalPrice.innerHTML = "$" + totalPrice.toFixed(2)
+    } else {
+        addPrice -= sugar
+        buttonTool4.classList.remove("tool__button_modificed");
+        icoTool4.classList.remove("tool__ico_modificed");
+        contentTool4.classList.remove("tool__content_modificed");
 
-    totalPrice = startPrice + sizePrice + addPrice
-    modalTotalPrice.innerHTML = "$" + totalPrice.toFixed(2)
-}
+        totalPrice = startPrice + sizePrice + addPrice
+        modalTotalPrice.innerHTML = "$" + totalPrice.toFixed(2)
+    }
 }
 
 document.getElementById("buttonTool4").addEventListener("click", chooseAddSugar);
@@ -184,30 +183,146 @@ function chooseAddCinnamon () {
         totalPrice = startPrice + sizePrice + addPrice
         modalTotalPrice.innerHTML = "$" + totalPrice.toFixed(2)
     }
-    }
+}
     
     document.getElementById("buttonTool5").addEventListener("click", chooseAddCinnamon);
 
 
-    //syrup
-    function chooseAddSyrup () {
-        if (!buttonTool6.classList.contains("tool__button_modificed")) {
-            addPrice += syrup
-            buttonTool6.classList.add("tool__button_modificed");
-            icoTool6.classList.add("tool__ico_modificed");
-            contentTool6.classList.add("tool__content_modificed");
+//syrup
+ function chooseAddSyrup () {
+    if (!buttonTool6.classList.contains("tool__button_modificed")) {
+        addPrice += syrup
+        buttonTool6.classList.add("tool__button_modificed");
+        icoTool6.classList.add("tool__ico_modificed");
+        contentTool6.classList.add("tool__content_modificed");
+    
+        totalPrice = startPrice + sizePrice + addPrice
+        modalTotalPrice.innerHTML = "$" + totalPrice.toFixed(2)
+    } else {
+        addPrice -= syrup
+        buttonTool6.classList.remove("tool__button_modificed");
+        icoTool6.classList.remove("tool__ico_modificed");
+        contentTool6.classList.remove("tool__content_modificed");
+    
+        totalPrice = startPrice + sizePrice + addPrice
+        modalTotalPrice.innerHTML = "$" + totalPrice.toFixed(2)
+    }
+}    
         
-            totalPrice = startPrice + sizePrice + addPrice
-            modalTotalPrice.innerHTML = "$" + totalPrice.toFixed(2)
-        } else {
-            addPrice -= syrup
-            buttonTool6.classList.remove("tool__button_modificed");
-            icoTool6.classList.remove("tool__ico_modificed");
-            contentTool6.classList.remove("tool__content_modificed");
-        
-            totalPrice = startPrice + sizePrice + addPrice
-            modalTotalPrice.innerHTML = "$" + totalPrice.toFixed(2)
-        }
-        }
-        
-        document.getElementById("buttonTool6").addEventListener("click", chooseAddSyrup);
+     document.getElementById("buttonTool6").addEventListener("click", chooseAddSyrup);
+
+//выбор модалки
+
+let imgMenu = document.getElementById("imgMenu")
+let titleMenu = document.getElementById("titleMenu")
+let contentMenu = document.getElementById("contentMenu")
+
+//1
+function modalMenu1 () {
+    imgMenu.innerHTML = '<img src="./img/coffee-1.jpg" alt="coffee">'
+    titleMenu.innerHTML = "Irish coffee"
+    contentMenu.innerHTML = "Fragrant black coffee with Jameson Irish whiskey and whipped milk"
+    modalTotalPrice.innerHTML = "$7.00"
+    startPrice = 7.00
+}
+
+document.getElementById("menu1").addEventListener("click", modalMenu1);
+document.getElementById("menu1").addEventListener("click", modalVisible);
+
+
+
+//2
+function modalMenu2 () {
+    imgMenu.innerHTML = '<img src="./img/coffee-2.jpg" alt="coffee">'
+    titleMenu.innerHTML = "Kahlua coffee"
+    contentMenu.innerHTML = "Classic coffee with milk and Kahlua liqueur under a cap of frothed milk"
+    modalTotalPrice.innerHTML = "$7.00"
+    startPrice = 7.00
+}
+
+document.getElementById("menu2").addEventListener("click", modalMenu2);
+document.getElementById("menu2").addEventListener("click", modalVisible);
+
+
+
+//3
+function modalMenu3 () {
+    imgMenu.innerHTML = '<img src="./img/coffee-3.jpg" alt="coffee">'
+    titleMenu.innerHTML = "Honey raf"
+    contentMenu.innerHTML = "Espresso with frothed milk, cream and aromatic honey"
+    modalTotalPrice.innerHTML = "$5.50"
+    startPrice = 5.50
+}
+
+document.getElementById("menu3").addEventListener("click", modalMenu3);
+document.getElementById("menu3").addEventListener("click", modalVisible);
+
+
+
+//4
+function modalMenu4 () {
+    imgMenu.innerHTML = '<img src="./img/coffee-4.jpg" alt="coffee">'
+    titleMenu.innerHTML = "Ice cappuccino"
+    contentMenu.innerHTML = "Cappuccino with soft thick foam in summer version with ice"
+    modalTotalPrice.innerHTML = "$5.00"
+    startPrice = 5.00
+}
+
+document.getElementById("menu4").addEventListener("click", modalMenu4);
+document.getElementById("menu4").addEventListener("click", modalVisible);
+
+
+
+//5
+function modalMenu5 () {
+    imgMenu.innerHTML = '<img src="./img/coffee-5.jpg" alt="coffee">'
+    titleMenu.innerHTML = "Espresso"
+    contentMenu.innerHTML = "Classic black coffee"
+    modalTotalPrice.innerHTML = "$4.50"
+    startPrice = 4.50
+}
+
+document.getElementById("menu5").addEventListener("click", modalMenu5);
+document.getElementById("menu5").addEventListener("click", modalVisible);
+
+
+
+//6
+function modalMenu6 () {
+    imgMenu.innerHTML = '<img src="./img/coffee-6.jpg" alt="coffee">'
+    titleMenu.innerHTML = "Latte"
+    contentMenu.innerHTML = "Espresso coffee with the addition of steamed milk and dense milk foam"
+    modalTotalPrice.innerHTML = "$5.50"
+    startPrice = 5.50
+}
+
+document.getElementById("menu6").addEventListener("click", modalMenu6);
+document.getElementById("menu6").addEventListener("click", modalVisible);
+
+
+
+//7
+function modalMenu7 () {
+    imgMenu.innerHTML = '<img src="./img/coffee-7.jpg" alt="coffee">'
+    titleMenu.innerHTML = "Latte macchiato"
+    contentMenu.innerHTML = "Espresso with frothed milk and chocolate"
+    modalTotalPrice.innerHTML = "$5.50"
+    startPrice = 5.50
+}
+
+document.getElementById("menu7").addEventListener("click", modalMenu7);
+document.getElementById("menu7").addEventListener("click", modalVisible);
+
+
+
+//8
+function modalMenu8 () {
+    imgMenu.innerHTML = '<img src="./img/coffee-8.jpg" alt="coffee">'
+    titleMenu.innerHTML = "Coffee with cognac"
+    contentMenu.innerHTML = "Fragrant black coffee with cognac and whipped cream"
+    modalTotalPrice.innerHTML = "$6.50"
+    startPrice = 6.50
+}
+
+document.getElementById("menu8").addEventListener("click", modalMenu8);
+document.getElementById("menu8").addEventListener("click", modalVisible);
