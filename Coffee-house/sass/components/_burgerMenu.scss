@@ -26,6 +26,19 @@ to {
 }
 }
 
+.modal-burger-inviz {
+    animation-duration: 0.7s;
+    animation-name: burger-invisible;
+}
+
+@keyframes burger-invisible {
+    from { 
+        left: 0%;
+    }
+    to {
+        left: 130%;
+    }
+    }
 
 .burger-favorite, .burger-about, .burger-mobile_app {
     margin-bottom: 6rem;

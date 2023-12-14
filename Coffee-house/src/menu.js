@@ -19,6 +19,7 @@ function modalInvisible() {
 
 document.getElementById("menu1").addEventListener("click", modalVisible);
 document.getElementById("modalEnd").addEventListener("click", modalInvisible);
+document.getElementById("modalShadow").addEventListener("click", modalInvisible);
 
 //расчет добавок
 
