@@ -39,14 +39,14 @@ height: 6rem;
 }
 
 .header__navigation {
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 769px) {
         display: none;
     }
 }
 
 .header__menu {
     display: flex;
-    @media screen and (max-width: 850px) {
+    @media screen and (max-width: 769px) {
         display: none;
     }
 }
