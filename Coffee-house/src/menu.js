@@ -15,6 +15,24 @@ function modalInvisible() {
     modalWindow.style.display = "none";
     modalShadow.style.display = "none";
     bodyMenu.style.overflow = "";
+
+    chooseSizeS();
+
+    buttonTool4.classList.remove("tool__button_modificed");
+    icoTool4.classList.remove("tool__ico_modificed");
+    contentTool4.classList.remove("tool__content_modificed");
+
+    buttonTool5.classList.remove("tool__button_modificed");
+    icoTool5.classList.remove("tool__ico_modificed");
+    contentTool5.classList.remove("tool__content_modificed");
+
+    buttonTool6.classList.remove("tool__button_modificed");
+    icoTool6.classList.remove("tool__ico_modificed");
+    contentTool6.classList.remove("tool__content_modificed");
+
+    let sizePrice = 0;
+    let addPrice = 0;
+
 }
 
 document.getElementById("modalEnd").addEventListener("click", modalInvisible);
