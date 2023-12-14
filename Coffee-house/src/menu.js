@@ -41,16 +41,16 @@ document.getElementById("modalShadow").addEventListener("click", modalInvisible)
 //refreshButton
 
 let refreshButton = document.getElementById("refreshButton");
-let dopMenu = document.getElementById("dopMenu")
-let dopMenu2 = document.getElementById("dopMenu2")
-let dopMenu3 = document.getElementById("dopMenu3")
-let dopMenu4 = document.getElementById("dopMenu4")
+let menu5 = document.getElementById("menu5")
+let menu6 = document.getElementById("menu6")
+let menu7 = document.getElementById("menu7")
+let menu8 = document.getElementById("menu8")
 
 function refreshOn() {
-dopMenu1.style.display = "Block";
-dopMenu2.style.display = "Block";
-dopMenu3.style.display = "Block";
-dopMenu4.style.display = "Block";
+menu5.style.display = "Block";
+menu6.style.display = "Block";
+menu7.style.display = "Block";
+menu8.style.display = "Block";
 refreshButton.style.display = "none";
 }
 
