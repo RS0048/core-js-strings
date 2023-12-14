@@ -1,10 +1,10 @@
-let modalSkin = document.getElementById("modalSkin");
+let modalWindow = document.getElementById("modalWindow");
 let modalShadow = document.getElementById("modalShadow");
 let bodyMenu = document.getElementById("bodyMenu")
 let burgerMenu = document.getElementById("burgerMenu")
 
 function modalVisible() {
-    modalSkin.style.display = "flex";
+    modalWindow.style.display = "flex";
     modalShadow.style.display = "flex";
     bodyMenu.style.overflow = "hidden";
     burgerMenu.style.display = "flex";
@@ -12,7 +12,7 @@ function modalVisible() {
 }
 
 function modalInvisible() {
-    modalSkin.style.display = "none";
+    modalWindow.style.display = "none";
     modalShadow.style.display = "none";
     bodyMenu.style.overflow = "";
 }

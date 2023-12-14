@@ -806,7 +806,7 @@ h5 {
   background-color: var(--color-background);
   padding: 1.6rem;
   border-radius: 4rem;
-  display: flex;
+  display: none;
   position: fixed;
   z-index: 6;
 }
