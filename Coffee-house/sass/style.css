@@ -822,6 +822,11 @@ h5 {
   border: none;
   margin-right: 2rem;
 }
+@media screen and (max-width: 769px) {
+  .modal__image {
+    display: none;
+  }
+}
 
 .modal__content {
   max-width: 43.8rem;
@@ -851,6 +856,7 @@ h5 {
 
 .modal__tool {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
 }
 
@@ -952,6 +958,7 @@ h5 {
 }
 .modal-total {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 2rem;
   font-size: 24px;
