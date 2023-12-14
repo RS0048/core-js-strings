@@ -1,0 +1,220 @@
+
+
+.modal__Shadow {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: (rgba(0,0,0,0.6));
+    z-index: 5;
+    display: none;
+}
+
+.modal__skin {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 6;
+    display: none;
+}
+
+.modal {
+    max-width: 80rem;
+    background-color: var(--color-background);
+    padding: 1.6rem;
+    border-radius: 4rem;
+    display: flex;
+    position: fixed;
+    
+}
+
+
+
+
+
+.modal__image {
+    display: flex;
+    width: 30.9rem;
+    height: 30.9rem;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4rem;
+    border: none;
+    margin-right: 2rem;
+}
+
+.modal__content {
+    max-width: 43.8rem;
+}
+
+.modal_title {
+    margin-bottom: 1.2rem;
+}
+
+.modal_p {
+    margin-bottom: 2rem;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.size_p {
+    margin: 0;
+    margin-bottom: 0.8rem;
+}
+
+.Additivies_p {
+    margin: 0;
+    margin-bottom: 0.8rem;
+}
+
+.modal__tool {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.tool__button {
+    display: flex;
+    align-items: center;
+    border: 0.1rem solid var(--color-border);
+    padding: 0.8rem;
+    padding-right: 1.5rem;
+    background-color: var(--color-background);
+    margin: 0;
+    margin-right: 0.8rem;
+    transition: 0.7s;
+
+    @media (max-width:500px) {
+        margin: 0 0.3rem;
+    }
+}
+
+.tool__ico {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10rem;
+    background-color: var(--color-border);
+    margin-right: 0.8rem;
+
+}
+
+.tool__content {
+    color: var(--color-text-dark);
+    font-size: 1.6rem;
+    line-height: 150%;
+}
+
+.tool__button_modificed {
+    display: flex;
+    border: 0.1rem solid var(--color-border-dark);
+    align-items: center;
+    justify-items: start;
+    padding: 0.8rem;
+    padding-right: 1.5rem;
+    background-color: var(--color-background-contact-us);
+    margin: 0;
+    margin-right: 0.8rem;
+    cursor: pointer;
+
+    @media (max-width:500px) {
+        margin: 0 0.3rem;
+    }
+
+}
+
+.tool__ico_modificed {
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    border-radius: 10rem;
+    background-color: var(--color-background);
+    margin-right: 0.8rem;
+
+
+}
+
+.tool__content_modificed {
+    color: var(--color-text-light);
+    font-size: 1.6rem;
+    line-height: 150%;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .tool__button:hover {
+        display: flex;
+        border: 0.1rem solid var(--color-border-dark);
+        align-items: center;
+        justify-items: start;
+        padding: 0.8rem;
+        padding-right: 1.5rem;
+        background-color: var(--color-background-contact-us);
+        margin: 0;
+        margin-right: 0.8rem;
+        transition: 0.7s;
+        cursor: pointer;
+
+    .tool__ico {
+        width: 3rem;
+        height: 3rem;
+        border: none;
+        border-radius: 10rem;
+        background-color: var(--color-background);
+        margin-right: 0.8rem;
+    }
+    .tool__content{
+        color: var(--color-text-light);
+        font-size: 1.6rem;
+        line-height: 150%;
+    }
+    
+}
+}
+
+.modal-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+}
+
+.modal_total-border {
+    border: 0.1rem solid var(--color-border);
+}
+
+.modal-info {
+    display: flex;
+    padding: 1.2rem 0;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    margin-bottom: 2rem;
+}
+
+.i__ico {
+    margin-right: 0.8rem;
+}
+
+.modal__button-close {
+    border: 0.1rem solid var(--color-border-dark);
+    border-radius: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

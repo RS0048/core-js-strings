@@ -127,7 +127,7 @@ h5 {
         flex-direction: column;
     }
     
-    .line-burger::before, .line-burger::after {
+    .line-burger1::after {
         content: "";
         display: block;
         width: 20px;
@@ -135,13 +135,28 @@ h5 {
         position: relative;
         border: 1px solid var(--color-border-dark);
         border-radius: 5px;
+        bottom: 6px;
+        transition: 1s;
     }
     
-    .line-burger::before {
-        top: 7px;
+    .line-burger2::before {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 0;
+        position: relative;
+        border: 1px solid var(--color-border-dark);
+        border-radius: 5px;
+        top: 6px;
+        transition: 1s;
     }
     
-    .line-burger::after {
-        bottom: 7px;
-    }
+}
+
+.line-burger-rotate1 {
+    transform: rotate(45deg);
+}
+
+.line-burger-rotate2 {
+    transform: rotate(-45deg);
 }

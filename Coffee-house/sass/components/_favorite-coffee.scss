@@ -18,8 +18,8 @@ margin-bottom: 10rem;
 }
 
 .slider__content {
-    transform: translate(-200%);
-    transition: 7s;
+    transform: translate(-100%);
+    //transition: 7s;
     width: 33.33%;
     flex-shrink: 0;
 }
@@ -107,17 +107,28 @@ margin-bottom: 10rem;
     background-color: var(--color-border);
     width: 4rem;
     height: 0.4rem;
+
 }
 
-
-
-.activ-control__border {
-    margin: 0 0.6rem;
-    border-radius: 10rem;
+.control__border-color {
     background-color: var(--color-border-dark);
+    border-radius: 10rem;
     width: 4rem;
     height: 0.4rem;
+    animation-duration: 6s;
+    animation-name: control_animation;
 }
+
+@keyframes control_animation {
+    from { 
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
 
 .about__h2 {
     margin-bottom: 4rem;

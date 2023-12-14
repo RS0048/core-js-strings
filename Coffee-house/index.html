@@ -9,10 +9,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 <link rel="icon" href="./img/coffee-cup.svg" type="image/x-icon">
-<script>alert('Добрый день! Увы, разобраться полностью в js я не успел, поэтому большая просьба, если возможно, начните проверку моей работы в четверг. Надеюсь к тому времени я одолею до конца слайдер, и добавлю остальные пункты. Заранее спасибо)');</script>
+
 
 </head>
-<body>
+<body id="bodyIndex">
     <header class="header">
         <div class="wrapper header__wrapper">
             <a href="./index.html" class="logo"><img src="./img/logo.svg" alt="Resourse Coffee House"></a>
@@ -29,17 +29,22 @@
                 <li class="navigation__link_menu"><a class="link" href="./menu.html">Menu <img class="coffee-cup__image" src="./img/coffee-cup.svg" alt="coffee-cup"></a></li>
                 </ul>
             </div>
-            <div class="burger-flex">
+
+            <div id="burgerButton" class="burger-flex">
                 <span class="burger">
-                    <span class="line-burger">
-                    </span>
+                    <span id="lineBurger1" class="line-burger1"></span>
+                    <span id="lineBurger2" class="line-burger2"></span>
                 </span>
             </div>
             
         </div>
     </header>
+
     <section id="promo-section" class="promo">
-        <div class="wrapper">
+        <div class="wrapper wrapper_promo">
+
+            <div class="video"><video class="video_back" src="./video/video (540p).mp4" autoplay muted loop></video></div>
+            
             <div class="promo-back">
                 <div class="promo__content">
                     <h1 class="h1 promo__h1">
@@ -63,6 +68,7 @@
                         </span>
                     </div>
                 </div>
+            
             </div>
             
         </div>
@@ -115,9 +121,9 @@
             </div>  
         </div>
         <div class="slider__control">
-            <div class="activ-control__border"></div>
-            <div class="control__border"></div>
-            <div class="control__border"></div>
+            <div class="activ-control__border control__border"><div id="controller1"></div></div>
+            <div class="control__border"><div id="controller2" class="control__border-color"></div> </div>
+            <div class="control__border"><div id="controller3" ></div> </div>
         </div>
     </section>
 
@@ -242,7 +248,17 @@
     </section>
 
 
+    <div id="modalBurger" class="modal-burger">
+        <div class="burger-favorite"><a id="burgerClose1" class="link" href="./index.html#favorite-coffee-section">Favorite coffee</a></div>
+        <div class="burger-about"><a id="burgerClose2" class="link" href="./index.html#about-section">About</a></div>
+        <div class="burger-mobile_app"><a id="burgerClose3" class="link" href="./index.html#mobile-app-section">Mobile app</a></div>
+        <div class="burger-contact_us"><a id="burgerClose4" class="link" href="./index.html#contact-us-section">Contact us</a></div>
+        <div class="burger-menu-ico"><a id="burgerClose5" class="link burger-menu-ico" href="./menu.html"><div id="burgerMenu" class="burger-menu">Menu</div><img class="burger_cup" src="./img/coffee-cup.svg"></a></div>
+        
+    </div>
+
     <script src="./src/index.js"></script>
-    
+    <script src="./src/burger.js"></script>
+
 </body>
 </html>

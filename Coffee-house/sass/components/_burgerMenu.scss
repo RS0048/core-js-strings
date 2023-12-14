@@ -1,0 +1,48 @@
+.modal-burger {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10rem;
+    bottom: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-background);
+    padding-top: 6rem;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%;
+    animation-duration: 0.7s;
+    animation-name: burger-visible;
+}
+
+@keyframes burger-visible {
+from { 
+    left: 130%;
+}
+to {
+    left: 0%;
+}
+}
+
+
+.burger-favorite, .burger-about, .burger-mobile_app {
+    margin-bottom: 6rem;
+}
+
+
+
+.burger-contact_us {
+    margin-bottom: 10rem;
+}
+
+.burger-menu-ico {
+    display: flex;
+}
+
+.burger_cup {
+    width: 4rem;
+    height: 4rem;
+    padding-left: 1.6rem;
+}

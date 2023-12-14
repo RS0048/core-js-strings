@@ -11,7 +11,7 @@
 <link rel="icon" href="./img/coffee-cup.svg" type="image/x-icon">
 
 </head>
-<body>
+<body id="bodyMenu">
     <header class="header">
         <div class="wrapper header__wrapper">
             <a href="./index.html" class="logo"><img src="./img/logo.svg" alt="Resourse Coffee House"></a>
@@ -28,10 +28,10 @@
                 <li class="navigation__link_menu border_menu">Menu <img class="coffee-cup__image" src="./img/coffee-cup.svg" alt="coffee-cup"></li>
                 </ul>
             </div>
-            <div class="burger-flex">
+            <div id="burgerButton" class="burger-flex">
                 <span class="burger">
-                    <span class="line-burger">
-                    </span>
+                    <span id="lineBurger1" class="line-burger1"></span>
+                    <span id="lineBurger2" class="line-burger2"></span>
                 </span>
             </div>
             
@@ -60,7 +60,7 @@
 
             
             <div class="coffee-menu-all">
-                <div class="coffee-menu-position">
+                <div id="menu1" class="coffee-menu-position">
                     <div class="position__image"><img class="position-img" src="./img/coffee-1.jpg" alt="coffee1"></div> 
                     <div class="menu-position-content">
                         <div class="menu-content">
@@ -129,7 +129,7 @@
                     </div>
                 </div>
     
-                <div class="dop-menu coffee-menu-position">
+                <div id="dopMenu1" class="dop-menu coffee-menu-position">
                     <div class="position__image"><img class="position-img" src="./img/coffee-5.jpg" alt="coffee1"></div> 
                     <div class="menu-position-content">
                         <div class="menu-content">
@@ -147,7 +147,7 @@
                     </div>
                 </div>
     
-                <div class="dop-menu coffee-menu-position">
+                <div id="dopMenu2" class="dop-menu coffee-menu-position">
                     <div class="position__image"><img class="position-img" src="./img/coffee-6.jpg" alt="coffee1"></div> 
                     <div class="menu-position-content">
                         <div class="menu-content">
@@ -164,7 +164,7 @@
                     </div>
                 </div>
     
-                <div class="dop-menu2 coffee-menu-position">
+                <div id="dopMenu3" class="dop-menu coffee-menu-position">
                     <div class="position__image"><img class="position-img" src="./img/coffee-7.jpg" alt="coffee1"></div> 
                     <div class="menu-position-content">
                         <div class="menu-content">
@@ -181,7 +181,7 @@
                     </div>
                 </div>
     
-                <div class="dop-menu2 coffee-menu-position">
+                <div id="dopMenu4" class="dop-menu coffee-menu-position">
                     <div class="position__image"><img class="position-img" src="./img/coffee-8.jpg" alt="coffee1"></div> 
                     <div class="menu-position-content">
                         <div class="menu-content">
@@ -198,8 +198,9 @@
                     </div>
                 </div>
             </div>
+
             <div >
-                <div class="refresh__button">
+                <div id="refreshButton" class="refresh__button">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="refresh">
                         <path id="Ellipse" d="M21.8883 13.5C21.1645 18.3113 17.013 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C16.1006 2 19.6248 4.46819 21.1679 8" stroke="#403F3D" stroke-linecap="round" stroke-linejoin="round"/>
@@ -210,9 +211,9 @@
                 
             </div>
         </div>
-    
     </section>
     
+
     
     <section id="contact-us-section" class="contact-us">
         <div class="wrapper">
@@ -266,5 +267,78 @@
     </section>
 
 
+
+    <div id="modalShadow" class="modal__Shadow"></div>
+        <div id="modalSkin" class="modal__skin">
+            <div id="modalWindow" class="modal">
+                <div class="modal__image">
+                    <img src="./img/coffee-1.jpg" alt="coffee">
+                </div>
+                <div class="modal__content">
+                    <h3 class="h3 modal_title">
+                        Irish coffee
+                    </h3>
+                    <p class="modal_p">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+                    <div class="size_p">Size</div>
+    
+                    <div class="modal__tool">
+                        <button class="button tool__button tool__button_modificed">
+                            <span class="tool__ico tool__ico_modificed">S</span>
+                            <span class="tool__content tool__content_modificed">200 ml</span>
+                        </button>
+                        <button class="button tool__button">
+                            <span class="tool__ico">M</span>
+                            <span class="tool__content">300 ml</span>
+                        </button>
+                        <button class="button tool__button">
+                            <span class="tool__ico">L</span>
+                            <span class="tool__content">400 ml</span>
+                        </button>  
+                    </div>
+    
+                    <p class="Additivies_p">Additivies</p>
+    
+                    <div class="modal__tool">
+                        <button class="button tool__button">
+                            <span class="tool__ico">1</span>
+                            <span class="tool__content">Sugar</span>
+                        </button>
+                        <button class="button tool__button">
+                            <span class="tool__ico">2</span>
+                            <span class="tool__content">Cinnamon</span>
+                        </button>
+                        <button class="button tool__button">
+                            <span class="tool__ico">3</span>
+                            <span class="tool__content">Syrup</span>
+                        </button>
+                    </div>
+    
+                    <div class="modal-total">
+                        <div class="modal_total">Total:</div>
+                        <div class="modal_total-price">$7.00</div>
+                    </div>
+                    <div class="modal_total-border"></div>
+                    <div class="modal-info">
+                        <div class="i__ico"><img src="./img/info-empty.svg" alt="ico"></div>
+                        <div class="modal-info-content">The cost is not final. Download our mobile app to see the final price and place your order. Earn loyalty points and enjoy your favorite coffee with up to 20% discount. </div> 
+                    </div>
+                    <div id="modalEnd" class="button modal__button-close">Close</div>
+    
+                </div>
+            </div>
+        </div>
+        
+    <div id="modalBurger" class="modal-burger">
+        <div class="burger-favorite"><a id="burgerClose1" class="link" href="./index.html#favorite-coffee-section">Favorite coffee</a></div>
+        <div class="burger-about"><a id="burgerClose2" class="link" href="./index.html#about-section">About</a></div>
+        <div class="burger-mobile_app"><a id="burgerClose3" class="link" href="./index.html#mobile-app-section">Mobile app</a></div>
+        <div class="burger-contact_us"><a id="burgerClose4" class="link" href="./index.html#contact-us-section">Contact us</a></div>
+        <div class="burger-menu-ico"><a id="burgerClose5" class="link burger-menu-ico" href="./menu.html"><div id="burgerMenu" class="burger-menu">Menu</div><img class="burger_cup" src="./img/coffee-cup.svg"></a></div>
+        
+    </div>
+
+
+    <script src="./src/menu.js"></script>
+    <script src="./src/burger2.js"></script>
 </body>
 </html>

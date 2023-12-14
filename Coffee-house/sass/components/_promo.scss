@@ -1,17 +1,49 @@
+
+.video {
+    position: relative;
+    border-radius: 4rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64.4rem;
+    margin-bottom: 10rem;
+
+}
+
+.video_back {
+    z-index: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    //width: 100%;
+    transform: scale(115%);
+
+}
+
+.wrapper_promo {
+    position: relative;
+}
+
 .promo-back {
-    background-image: url(../img/img-hero.jpg);
+    //background: url(../img/img-hero.jpg);
     background-position: center center;
     background-size: cover;
-    height: auto;
+    //height: auto;
+    height: 64.4rem;
     color: var(--color-text-light);
     border-radius: 40px;
     border-style: none;
     margin-bottom: 10rem;
     //width: 100%;
     max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     @media screen and (max-width: 768px) {
         overflow: hidden;
     }
+    
 }
 
 .promo__content {
@@ -23,6 +55,7 @@
     @media screen and (max-width: 700px) {
         padding: 6rem 1.6rem;
     }
+    z-index: 6;
 }
 
 .promo__h1 {
